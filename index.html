@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="images/icons8-joystick-48.png""/>
+    <title>Etch A Sketch</title>
+    </style>
+  </head>
+  <body>
+   <section>
+    <h1>Etch A Sketch</h1>
+    <div class="game_wrapper">
+      <div class="game_options">
+        <div class="pickColor" >
+          <input type="color"  name="pickColor" id="pickColor" onclick="pick()">
+        </div>
+        <div class="goBlack" onclick="black()">Black</div>
+        <div class="goRandom" onclick="random()">Random</div>
+        <div class="ERaser" onclick="eraser()">ERaser</div>
+        <div class="Clear">Clear</div>
+        <div class="pickSize">
+          <p id="range_UI">33X33</p>
+          <input type="range" id="range"  min="1" max="64">
+        </div>
+      </div>
+
+    <div class="main_container"></div>
+    
+    </div>
+    <div class="footer">
+      <h1>Copyright &copy; <a href="https://github.com/Mohamed-Marsou">Mohamed Marsou</a> 2022 </h1>
+     </div>
+   </section>
+  
+    <script src="./javaScript/main.js"></script>
+  </body>
+</html>
